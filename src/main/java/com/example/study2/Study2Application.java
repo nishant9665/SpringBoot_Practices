@@ -36,17 +36,29 @@ public class Study2Application {
 		
 		//----------Select Operation / Read operation
 		
-		List <Student> stdlist = stdService.getAllStudentDetails();
-		for(Student stds:stdlist) {
-			System.out.println("Id : "+stds.getId());
-			System.out.println("Name :"+stds.getName());
-			System.out.println("RollNo :"+stds.getRollno());
-			System.out.println("Marks : "+stds.getMark());
-			System.out.println("-----------------------------------");
+//		List <Student> stdlist = stdService.getAllStudentDetails();
+//		for(Student stds:stdlist) {
+//			System.out.println("Id : "+stds.getId());
+//			System.out.println("Name :"+stds.getName());
+//			System.out.println("RollNo :"+stds.getRollno());
+//			System.out.println("Marks : "+stds.getMark());
+//			System.out.println("-----------------------------------");
+//		}
+		
+		//----------Select Operation / Read operation2
+		
+		
+		Student stds = stdService.getDetailsByID(4L);
+		if(stds!=null) {
+		System.out.println("Id : "+stds.getId());
+		System.out.println("Name :"+stds.getName());
+		System.out.println("RollNo :"+stds.getRollno());
+		System.out.println("Marks : "+stds.getMark());
+		System.out.println("-----------------------------------");
 		}
-		
-		
-		
+		else {
+			System.out.println("Student is not found");
+		}
 	}
 
 }

@@ -8,6 +8,8 @@ public interface StudentService {
 	
 	public boolean addStudentDetails(Student std);
 	public List<Student> getAllStudentDetails();
+	public Student getDetailsByID(long id );
+	
 	
 
 }
