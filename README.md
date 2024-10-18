@@ -1,7 +1,7 @@
 # How to Create SpringBoot Project ?
 Steps to create 'Spring Boot'with Spring data JPA program:
 1.Create Spring starter project.
-2.Provide dependencies
+2.Provide dependencies.
  - Spring-boot-starter-data-jpa
  -mysql-connection-j
 3.Create an entity class (Student.java)
