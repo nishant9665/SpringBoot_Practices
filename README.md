@@ -10,23 +10,23 @@ Steps to create 'Spring Boot'with Spring data JPA program:
 6.Create main class and execute the program
 
 --------------------------
-# How to use CRUD operation in SpringBootFramework
--->Insert (Create) operation:
-   save(s entity)
-   saveAll(Iterable<s>entities)
+How to use CRUD operation in SpringBootFramework
+Insert (Create) operation:
+save(s entity)
+saveAll(Iterable<s>entities)
    
--->Update Operation:
-  Save(s entity)
+Update Operation:
+Save(s entity)
   
--->Delete Operation
-  delete(s entity)
-  deleteAll(Iterable<? extends S>entities)
-  deleteAll()
-  deleteById(Id id)
+Delete Operation
+delete(s entity)
+deleteAll(Iterable<? extends S>entities)
+deleteAll()
+deleteById(Id id)
   
---> Read operation:
-   findById(Id id)
-   findAll(Iterable<s>entities) etc
+Read operation:
+findById(Id id)
+findAll(Iterable<s>entities) etc
    
    
 Operation	SQL	   HTTP verbs	  RESTful Web Service
