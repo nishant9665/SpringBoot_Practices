@@ -48,16 +48,34 @@ public class Study2Application {
 		//----------Select Operation / Read operation2
 		
 		
-		Student stds = stdService.getDetailsByID(4L);
-		if(stds!=null) {
-		System.out.println("Id : "+stds.getId());
-		System.out.println("Name :"+stds.getName());
-		System.out.println("RollNo :"+stds.getRollno());
-		System.out.println("Marks : "+stds.getMark());
-		System.out.println("-----------------------------------");
+//		Student stds = stdService.getDetailsByID(4L);
+//		if(stds!=null) {
+//		System.out.println("Id : "+stds.getId());
+//		System.out.println("Name :"+stds.getName());
+//		System.out.println("RollNo :"+stds.getRollno());
+//		System.out.println("Marks : "+stds.getMark());
+//		System.out.println("-----------------------------------");
+//		}
+//		else {
+//			System.out.println("Student is not found");
+//		}
+		
+		//--------- update Operation ------------------
+//		boolean status =stdService.updateStudentDetails(1l, 91.7f);
+//		if(status) {
+//			System.out.println("Student details update successfully");
+//		}
+//		else {
+//			System.out.println("Student details not update due to some error");
+//		}
+		
+		//--------- Delete Operation ------------------
+		boolean status =stdService.deleteStudentDetails(2l);
+		if(status) {
+			System.out.println("Student details deleted successfully");
 		}
 		else {
-			System.out.println("Student is not found");
+			System.out.println("Student details not deleted due to some error");
 		}
 	}
 

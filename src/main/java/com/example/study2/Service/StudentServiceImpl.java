@@ -43,4 +43,30 @@ public class StudentServiceImpl implements StudentService {
 		}
 	}
 
+	@Override
+	public boolean updateStudentDetails(long id, float marks) {
+		Student std = getDetailsByID(id);
+		if(std!=null) {
+			std.setMark(marks);
+			studentrepository.save(std);
+			return true;
+		}
+		return false;
+	}
+
+	@Override
+	public boolean deleteStudentDetails(long id) {
+		
+		boolean status =false;
+		try {
+			studentrepository.deleteById(id);
+			status =true;
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+			status =false;
+		}
+		return status;
+	}
+
 }
