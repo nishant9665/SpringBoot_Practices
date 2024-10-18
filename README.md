@@ -26,7 +26,10 @@ deleteById(Id id)
   
 Read operation:
 findById(Id id)
-findAll(Iterable<s>entities) etc
+findAllById(Iterable<ID> ids )
+count()
+existsById(Id id)
+
    
    
 Operation	SQL	   HTTP verbs	  RESTful Web Service
